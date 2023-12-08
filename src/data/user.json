@@ -1,0 +1,202 @@
+[
+    {
+        "id": 1,
+        "firstName": "Belia",
+        "lastName": "Guly",
+        "email": "bguly0@51.la",
+        "gender": "Female",
+        "birthday": "02/06/1983",
+        "salary": 9693,
+        "phone": "(+84)2856412889"
+    },
+    {
+        "id": 2,
+        "firstName": "Rosalynd",
+        "lastName": "Gerrelts",
+        "email": "rgerrelts1@weibo.com",
+        "gender": "Female",
+        "birthday": "01/04/1964",
+        "salary": 8951,
+        "phone": "(+84)1422821117"
+    },
+    {
+        "id": 3,
+        "firstName": "Khalil",
+        "lastName": "Joppich",
+        "email": "kjoppich2@marketwatch.com",
+        "gender": "Male",
+        "birthday": "30/06/1987",
+        "salary": 7627,
+        "phone": "(+84)2074130416"
+    },
+    {
+        "id": 4,
+        "firstName": "Eric",
+        "lastName": "Cobbled",
+        "email": "ecobbled3@last.fm",
+        "gender": "Male",
+        "birthday": "06/11/1989",
+        "salary": 6994,
+        "phone": "(+84)8295138650"
+    },
+    {
+        "id": 5,
+        "firstName": "Jerry",
+        "lastName": "Hucks",
+        "email": "jhucks4@acquirethisname.com",
+        "gender": "Male",
+        "birthday": "21/10/1978",
+        "salary": 6691,
+        "phone": "(+84)2594082766"
+    },
+    {
+        "id": 6,
+        "firstName": "Emily",
+        "lastName": "Smith",
+        "email": "esmith5@example.com",
+        "gender": "Female",
+        "birthday": "15/04/1985",
+        "salary": 8235,
+        "phone": "(+84)2594083456"
+    },
+    {
+        "id": 7,
+        "firstName": "David",
+        "lastName": "Johnson",
+        "email": "djohnson6@example.com",
+        "gender": "Male",
+        "birthday": "03/09/1992",
+        "salary": 7543,
+        "phone": "(+84)2594084789"
+    },
+    {
+        "id": 8,
+        "firstName": "Sophia",
+        "lastName": "Brown",
+        "email": "sbrown7@example.com",
+        "gender": "Female",
+        "birthday": "22/11/1988",
+        "salary": 9120,
+        "phone": "(+84)2594085932"
+    },
+    {
+        "id": 9,
+        "firstName": "Daniel",
+        "lastName": "Davis",
+        "email": "ddavis8@example.com",
+        "gender": "Male",
+        "birthday": "07/06/1976",
+        "salary": 6895,
+        "phone": "(+84)2594086012"
+    },
+    {
+        "id": 10,
+        "firstName": "Olivia",
+        "lastName": "Wilson",
+        "email": "owilson9@example.com",
+        "gender": "Female",
+        "birthday": "14/02/1983",
+        "salary": 7750,
+        "phone": "(+84)2594087123"
+    },
+    {
+        "id": 11,
+        "firstName": "Michael",
+        "lastName": "Anderson",
+        "email": "manderson10@example.com",
+        "gender": "Male",
+        "birthday": "29/07/1990",
+        "salary": 6980,
+        "phone": "(+84)2594088345"
+    },
+    {
+        "id": 12,
+        "firstName": "Emma",
+        "lastName": "Miller",
+        "email": "emiller11@example.com",
+        "gender": "Female",
+        "birthday": "18/05/1981",
+        "salary": 8375,
+        "phone": "(+84)2594089456"
+    },
+    {
+        "id": 13,
+        "firstName": "Christopher",
+        "lastName": "White",
+        "email": "cwhite12@example.com",
+        "gender": "Male",
+        "birthday": "05/12/1979",
+        "salary": 7215,
+        "phone": "(+84)2594090567"
+    },
+    {
+        "id": 14,
+        "firstName": "Ava",
+        "lastName": "Taylor",
+        "email": "ataylor12@example.com",
+        "gender": "Female",
+        "birthday": "10/08/1994",
+        "salary": 6539,
+        "phone": "(+83)2594091678"
+    },
+    {
+        "id": 15,
+        "firstName": "Ryan",
+        "lastName": "Thomas",
+        "email": "rthomas13@example.com",
+        "gender": "Male",
+        "birthday": "24/01/1987",
+        "salary": 7831,
+        "phone": "(+83)2594092789"
+    },
+    {
+        "id": 16,
+        "firstName": "Mia",
+        "lastName": "Martin",
+        "email": "mmartin14@example.com",
+        "gender": "Female",
+        "birthday": "01/04/1984",
+        "salary": 8994,
+        "phone": "(+83)2594093890"
+    },
+    {
+        "id": 17,
+        "firstName": "Ethan",
+        "lastName": "Harris",
+        "email": "eharris15@example.com",
+        "gender": "Male",
+        "birthday": "8/09/1977",
+        "salary": 7119,
+        "phone": "(+83)2594094901"
+    },
+    {
+        "id": 18,
+        "firstName": "Chloe",
+        "lastName": "Nelson",
+        "email": "cnelson16@example.com",
+        "gender": "Female",
+        "birthday": "15/03/1991",
+        "salary": 7449,
+        "phone": "(+83)2594095012"
+    },
+    {
+        "id": 19,
+        "firstName": "Logan",
+        "lastName": "Cooper",
+        "email": "lcooper17@example.com",
+        "gender": "Male",
+        "birthday": "22/06/1986",
+        "salary": 8319,
+        "phone": "(+83)2594096123"
+    },
+    {
+        "id": 20,
+        "firstName": "Harper",
+        "lastName": "Russell",
+        "email": "hrussell18@example.com",
+        "gender": "Female",
+        "birthday": "30/12/1982",
+        "salary": 7765,
+        "phone": "(+84)2594097234"
+    }
+]

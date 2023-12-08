@@ -1,0 +1,27 @@
+.app {
+    max-width: 600px;
+    width: 100%;
+}
+
+.input-form {
+    max-width: 400px;
+    width: 100%;
+}
+
+.todo-list {
+    max-width: 300px;
+    width: 100%;
+}
+
+.item__name {
+    max-width: 85%;
+    word-wrap: break-word;
+}
+
+.incomplete-item {
+    background: #DAE8FC;
+}
+
+.complete-item {
+    background: #D5E8D4;
+}

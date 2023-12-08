@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "john doe",
+        "age": 19,
+        "address": "berlin",
+        "phone": "0321654987"
+    },
+    {
+        "id": 2,
+        "name": "jane smith",
+        "age": 25,
+        "address": "paris",
+        "phone": "0654321890"
+    },
+    {
+        "id": 3,
+        "name": "bob johnson",
+        "age": 30,
+        "address": "new york",
+        "phone": "2123456789"
+    }
+]

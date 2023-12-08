@@ -1,0 +1,19 @@
+.product-list {
+    max-width: 576px;
+    width: 100%;
+}
+
+.product-img-wrapper {
+    max-width: 220px;
+    width: 100%;
+}
+
+.avatar-img-wrapper {
+    max-width: 36px;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
