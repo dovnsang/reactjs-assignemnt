@@ -29,7 +29,7 @@ const TableBook = ({ className, books, currentCartItem, setCartItem, currentForm
                     <tbody>
                         {books.map(book => (
                             <tr key={book.id}
-                                className={`book align-middle ${book.id === currentCartItem.id && currentForm === FormType.ADD ? 'active' : ''}`}
+                                className={`book ${book.id === currentCartItem.id && currentForm === FormType.ADD ? 'active' : ''}`}
                                 onClick={() => handleBookClick(book)}>
                                 <td className='d-flex align-items-center'>
                                     <div style={{ width: '60px', height: '40px' }}
@@ -42,10 +42,10 @@ const TableBook = ({ className, books, currentCartItem, setCartItem, currentForm
                                         <span>{book.subtitle}</span>
                                     </div>
                                 </td>
-                                <td>{book.type}</td>
-                                <td>{book.author}</td>
-                                <td>${book.price.toFixed(2)}</td>
-                                <td>{book.publicDate}</td>
+                                <td className='align-middle'>{book.type}</td>
+                                <td className='align-middle'>{book.author}</td>
+                                <td className='align-middle'>${book.price.toFixed(2)}</td>
+                                <td className='align-middle'>{book.publicDate}</td>
                             </tr>
                         ))}
                     </tbody>

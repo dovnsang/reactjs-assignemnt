@@ -9,13 +9,14 @@ const DeleteModal = ({ currentCartItem, cart, setCart, setDeleteModal }) => {
     }
 
     return (
-        <div className="modal show" tabIndex="-1">
+        <div className="modal show overlay" tabIndex="-1">
             <div className="modal-dialog">
                 <div className="modal-content">
                     <div className="modal-header">
                         <h5 className="modal-title">Delete Item</h5>
-                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+                        <button type="button" className="close"
+                            onClick={() => setDeleteModal(false)}>
+                            <span>&times;</span>
                         </button>
                     </div>
                     <div className="modal-body">
@@ -30,30 +31,5 @@ const DeleteModal = ({ currentCartItem, cart, setCart, setDeleteModal }) => {
         </div>
     );
 };
-
-// const App = () => {
-//     const [showModal, setShowModal] = useState(false);
-
-//     const handleShowModal = () => {
-//         setShowModal(true);
-//     };
-
-//     const handleCloseModal = () => {
-//         setShowModal(false);
-//     };
-
-//     const handleDelete = () => {
-//         // Implement your delete logic here
-//         console.log('Deleting...');
-//         handleCloseModal();
-//     };
-
-//     return (
-//         <div>
-//             <button classNameName="btn btn-danger" onClick={handleShowModal}>Open Delete Modal</button>
-//             <DeleteModal show={showModal} handleClose={handleCloseModal} handleDelete={handleDelete} />
-//         </div>
-//     );
-// };
 
 export default DeleteModal;
