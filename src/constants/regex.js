@@ -7,3 +7,5 @@ export const NUMBER_ONLY_PATTERN = /^\d+$/;
 export const TEXT_ONLY_PATTERN = /^[a-zA-Z\s]+$/;
 
 export const PHONE_PATTERN = /^\d{10,11}$/;
+
+export const SEARCH_PATTERN = /^[a-zA-Z0-9\s]{3,}$/

@@ -25,6 +25,14 @@ const links = [
     {
         path: '/cms',
         text: 'CMS'
+    },
+    {
+        path: '/fa-library',
+        text: 'FA Library'
+    },
+    {
+        path: '/book-list',
+        text: 'Book List'
     }
 ]
 

@@ -1,0 +1,7 @@
+.book:hover {
+    cursor: pointer;
+}
+
+.book.active {
+    --bs-table-bg: #77bbd0ab;
+}

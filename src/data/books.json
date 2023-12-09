@@ -1,0 +1,119 @@
+[
+    {
+        "id": 1,
+        "title": "The Lord of the Ring",
+        "subtitle": "Book One: The Fellowship of the Ring",
+        "type": "Long Story",
+        "author": "J. R. R",
+        "price": 3,
+        "publicDate": "29 Jul 1954"
+    },
+    {
+        "id": 2,
+        "title": "The Lord of the Ring",
+        "subtitle": "Book Two: The Two Towers",
+        "type": "Long Story",
+        "author": "J. R. R",
+        "price": 4,
+        "publicDate": "11 Nov 1954"
+    },
+    {
+        "id": 3,
+        "title": "The Lord of the Ring",
+        "subtitle": "Book Three: The Return of the King",
+        "type": "Long Story",
+        "author": "J. R. R",
+        "price": 5,
+        "publicDate": "20 Oct 1955"
+    },
+    {
+        "id": 4,
+        "title": "To Kill a Mockingbird",
+        "subtitle": "A Novel",
+        "type": "Fiction",
+        "author": "Harper Lee",
+        "price": 6,
+        "publicDate": "11 Jul 1960"
+    },
+    {
+        "id": 5,
+        "title": "1984",
+        "subtitle": "Nineteen Eighty-Four",
+        "type": "Dystopian",
+        "author": "George Orwell",
+        "price": 7,
+        "publicDate": "8 Jun 1949"
+    },
+    {
+        "id": 6,
+        "title": "The Great Gatsby",
+        "subtitle": "Modern Classics",
+        "type": "Fiction",
+        "author": "F. Scott Fitzgerald",
+        "price": 8,
+        "publicDate": "10 Apr 1925"
+    },
+    {
+        "id": 7,
+        "title": "The Catcher in the Rye",
+        "subtitle": "A Novel",
+        "type": "Fiction",
+        "author": "J.D. Salinger",
+        "price": 9,
+        "publicDate": "16 Jul 1951"
+    },
+    {
+        "id": 8,
+        "title": "To the Lighthouse",
+        "subtitle": "Classic Fiction",
+        "type": "Modernist",
+        "author": "Virginia Woolf",
+        "price": 10,
+        "publicDate": "5 May 1927"
+    },
+    {
+        "id": 9,
+        "title": "Brave New World",
+        "subtitle": "Aldous Huxley",
+        "type": "Dystopian",
+        "author": "Aldous Huxley",
+        "price": 11,
+        "publicDate": "2 Jul 1932"
+    },
+    {
+        "id": 10,
+        "title": "Pride and Prejudice",
+        "subtitle": "A Novel",
+        "type": "Romance",
+        "author": "Jane Austen",
+        "price": 12,
+        "publicDate": "28 Jan 1813"
+    },
+    {
+        "id": 11,
+        "title": "Moby-Dick",
+        "subtitle": "The Whale",
+        "type": "Adventure",
+        "author": "Herman Melville",
+        "price": 13,
+        "publicDate": "18 Oct 1851"
+    },
+    {
+        "id": 12,
+        "title": "The Odyssey",
+        "subtitle": "Epic Poetry",
+        "type": "Poetry",
+        "author": "Homer",
+        "price": 14,
+        "publicDate": "8th century BCE"
+    },
+    {
+        "id": 13,
+        "title": "One Hundred Years of Solitude",
+        "subtitle": "A Novel",
+        "type": "Magical Realism",
+        "author": "Gabriel García Márquez",
+        "price": 15,
+        "publicDate": "30 May 1967"
+    }
+]
