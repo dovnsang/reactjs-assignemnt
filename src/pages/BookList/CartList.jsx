@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FormType } from '../../constants/common'
 
-const CartList = ({ className, cart, setCart, currentCartItem, setCartItem, currentForm, setForm }) => {
+const CartList = ({ className, cart, setCart, currentCartItem, setCartItem, currentForm, setForm, setDeleteModal }) => {
     const [totalQuantity, setTotalQuantity] = useState(0)
     const [totalPrice, setTotalPrice] = useState(0)
 
@@ -11,9 +11,9 @@ const CartList = ({ className, cart, setCart, currentCartItem, setCartItem, curr
         setTotalPrice(cart.reduce((accumulator, currentItem) => accumulator + currentItem.total, 0))
     }, [cart])
 
-    const deleteCartItem = (itemId) => {
-        const newCart = cart.filter(item => item.id !== itemId)
-        setCart(newCart)
+    const deleteCartItem = (item) => {
+        setCartItem(item)
+        setDeleteModal(true)
     }
 
     const handleItemClick = (item) => {
@@ -54,7 +54,7 @@ const CartList = ({ className, cart, setCart, currentCartItem, setCartItem, curr
                                 <td>{item.quantity}</td>
                                 <td>${item.total.toFixed(2)}</td>
                                 <td><button className="btn btn-danger"
-                                    onClick={() => deleteCartItem(item.id)}>Delete</button></td>
+                                    onClick={() => deleteCartItem(item)}>Delete</button></td>
                             </tr>
                         ))}
                     </tbody>

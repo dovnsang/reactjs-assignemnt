@@ -33,7 +33,7 @@ const TableBook = ({ className, books, currentCartItem, setCartItem, currentForm
                                 onClick={() => handleBookClick(book)}>
                                 <td className='d-flex align-items-center'>
                                     <div style={{ width: '60px', height: '40px' }}
-                                        className='me-2 border'>
+                                        className='mr-2 border'>
                                         <img src="https://s26162.pcdn.co/wp-content/uploads/sites/2/2022/05/Book.jpg" alt="book"
                                             className='w-100 h-100' />
                                     </div>

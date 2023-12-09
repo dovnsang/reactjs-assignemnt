@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { FormType } from '../../constants/common'
 
-const Form = ({ className, currentCartItem, cart, setCart, currentForm }) => {
+const Form = ({ className, currentCartItem, setCartItem, cart, setCart, currentForm, setForm }) => {
+    const formRef = useRef(null)
     const [formData, setFormData] = useState({})
     const [error, setError] = useState('')
     const [success, setSuccess] = useState('')
@@ -67,6 +68,13 @@ const Form = ({ className, currentCartItem, cart, setCart, currentForm }) => {
     }
 
     const updateCart = (cartItem) => {
+        let isItemExits = cart.some(item => item.id === cartItem.id)
+        if (!isItemExits) {
+            setSuccess('')
+            setError('Cart item does not exists.')
+            return
+        }
+
         let newCart = []
         if (cartItem.quantity === 0) {
             newCart = cart.filter(item => item.id !== cartItem.id)
@@ -100,52 +108,56 @@ const Form = ({ className, currentCartItem, cart, setCart, currentForm }) => {
             setFormData(prev => ({ ...prev, quantity: Number(value) }))
     }
 
+    const resetForm = () => {
+        setFormData({})
+        setCartItem({})
+        setForm(FormType.ADD)
+    }
+
     return (
         <div className={`card ${className}`}>
             <h2 className="card-header">Form</h2>
-            <form className="card-body">
-                <div className="row mb-3">
-                    <div>
-                        <label htmlFor="book" className="form-label">Book</label>
-                        <input type="text" id='book' className="form-control" placeholder="What's book you wanna buy?" disabled
-                            defaultValue={formData && formData.title && formData.subtitle ?
-                                `${formData?.title} - ${formData?.subtitle}` :
-                                ''} />
-                    </div>
+            <form ref={formRef} className="card-body">
+                <div className='form-group w-100'>
+                    <label htmlFor="book" className="form-label">Book</label>
+                    <input type="text" id='book' className="form-control" placeholder="What's book you wanna buy?" disabled
+                        defaultValue={formData && formData.title && formData.subtitle ?
+                            `${formData?.title} - ${formData?.subtitle}` :
+                            ''} />
                 </div>
-                <div className="row mb-3">
-                    <div className='col-4'>
+                <div className="form-row">
+                    <div className='form-group col'>
                         <label htmlFor="type" className="form-label">Type</label>
                         <input id='type' type="text" className="form-control" disabled
                             defaultValue={formData.type} />
                     </div>
-                    <div className='col-4'>
+                    <div className='form-group col'>
                         <label htmlFor="author" className="form-label">Author</label>
                         <input id='author' type="text" className="form-control" disabled
                             defaultValue={formData.author} />
                     </div>
-                    <div className='col-4'>
+                    <div className='form-group col'>
                         <label htmlFor="public-date" className="form-label">Public Date</label>
                         <input type="text" id='public-date' className="form-control" disabled
                             defaultValue={formData.publicDate} />
                     </div>
                 </div>
-                <div className="row mb-3">
-                    <div className='col-3'>
+                <div className="form-row">
+                    <div className='form-group col-3'>
                         <label htmlFor="price" className="form-label">Price</label>
                         <input id='price' type="text" className="form-control" disabled
                             defaultValue={formData.price} />
                     </div>
-                    <div className="col-1 d-flex justify-content-center align-items-end mb-2">X</div>
-                    <div className='col-3'>
+                    <div className="col-1 d-flex justify-content-center align-items-center mt-3">X</div>
+                    <div className='form-group col-3'>
                         <label htmlFor="quantity" className="form-label">Quantity</label>
                         <input id='quantity' type="text" className="form-control"
                             value={formData.quantity || 0}
                             onChange={handleQuantityChange}
                         />
                     </div>
-                    <div className="col-1 d-flex justify-content-center align-items-end mb-2">=</div>
-                    <div className='col-4'>
+                    <div className="col-1 d-flex justify-content-center align-items-center mt-3">=</div>
+                    <div className='form-group col-4'>
                         <label htmlFor="public-date" className="form-label">Total</label>
                         <input type="text" id='total' className="form-control" disabled
                             value={formData.total || 0}
@@ -156,9 +168,11 @@ const Form = ({ className, currentCartItem, cart, setCart, currentForm }) => {
                 <p className="text-danger">{error}</p>
                 <p className="text-success">{success}</p>
                 <div>
-                    <button className="btn btn-primary me-3"
+                    <button className="btn btn-primary mr-3"
                         onClick={onSubmit}>{currentForm === FormType.ADD ? 'Add to Cart' : 'Update Cart'}</button>
-                    <button className="btn btn-light border">Cancel</button>
+                    <button type='button'
+                        className="btn btn-light border"
+                        onClick={resetForm}>Cancel</button>
                 </div>
             </form>
         </div>

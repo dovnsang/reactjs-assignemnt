@@ -3,5 +3,9 @@
 }
 
 .book.active {
-    --bs-table-bg: #77bbd0ab;
+    background-color: #77bbd0ab;
+}
+
+.show {
+    display: block !important;
 }
