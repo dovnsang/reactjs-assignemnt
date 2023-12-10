@@ -1,0 +1,29 @@
+.header {
+    position: relative;
+    height: 50px !important;
+}
+
+.user-dropdown {
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+
+.cover {
+    width: 80px;
+    height: 100px;
+}
+
+.modal-dialog {
+    animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}

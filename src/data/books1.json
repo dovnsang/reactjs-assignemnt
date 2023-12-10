@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Lorem ipsum 1",
+        "category": "Truyện kí",
+        "author": "Nguyen Van A",
+        "releaseYear": "2000"
+    },
+    {
+        "id": 2,
+        "title": "Lorem ipsum 2",
+        "category": "Trinh thám",
+        "author": "Nguyen Van B",
+        "releaseYear": "2000"
+    },
+    {
+        "id": 3,
+        "title": "Lorem ipsum 3",
+        "category": "Tiểu thuyết",
+        "author": "Nguyen Van C",
+        "releaseYear": "2000"
+    }
+]
