@@ -13,11 +13,9 @@ const RootLayout = () => {
     return (
         <>
             <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
-            <div className="container-fluid">
-                <main className={`main ${isSidebarOpen ? '' : 'sidebar-hide'}`}>
-                    <Outlet />
-                </main>
-            </div>
+            <main className={`main ${isSidebarOpen ? '' : 'sidebar-hide'}`}>
+                <Outlet />
+            </main>
 
         </>
     )
